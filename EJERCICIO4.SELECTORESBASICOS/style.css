@@ -1,0 +1,21 @@
+body{
+    font-size: 12px;
+    text-align: justify;
+    color: yellow;
+    background-color: black;
+    padding:0.5in;
+}
+
+h1{
+    color: orange;
+    font-family: Arial;
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 16px;
+}
+h2{
+    font-family: Arial;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
