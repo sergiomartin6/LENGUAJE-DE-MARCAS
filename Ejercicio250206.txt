@@ -1,0 +1,24 @@
+(:Obtén por cada sucursal el nombre de la cuenta del tipo AHORRO cuyo saldo debe sea el máxima
+Utiliza los documentos productos.xml y zonas.xml:)
+for $sucur in //sucursal
+let $cuentaahorro := $sucur/cuenta[@tipo='AHORRO']
+for $cuentamax in max($cuentaahorro/saldohaber)
+let $nombre := //cuenta[saldohaber=$cuentamax]/nombre
+return concat("En la ",$sucur/@codigo, " la cuenta que mas tiene es ",$cuentamax, " y es de ", $nombre)
+
+
+(: Visualiza los nombres de productos con su nombre de zona. Utiliza dos for en la consulta.:)
+
+for $productos in //produc
+for $zona in $productos/cod_zona
+return concat("El producto ",$productos/denominacion, " en la zona ",$zona)
+
+(:Visualiza los nombres de productos con stockminimo > 5. su código de zona su nombre y 
+el director de esa zona. Utiliza dos for en la consulta:)
+
+for $productos in //produc
+where $productos/stock_actual >5
+for $zona in $productos/cod_zona
+let $nombre := $productos
+return concat("El producto ",$productos/denominacion, " en la zona ",$zona)
+
