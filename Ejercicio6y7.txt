@@ -1,0 +1,32 @@
+#  Renombra el nodo DEP_ROW del documento departamentos.xml por filadepar
+
+for $dep in //DEP_ROW
+return
+   update rename $dep as "filadepar"
+
+
+
+ #Borra todos los empleados que trabajen en Valladolid. 
+
+for $va in //DEP_ROW[LOC = 'VALLADOLID']
+return update delete $va
+
+
+#Añade en departamentos un nuevo campo que muestre la media del salario de sus empleados en su departamento.
+
+for $dep in //DEP_ROW
+let $dept_no := $dep/DEPT_NO
+let $media := avg(//EMP_ROW[DEPT_NO=$dept_no]/SALARIO)
+return
+update insert <media_salario>{$media}</media_salario>
+into $dep
+
+#Incrementa el salario a todos los empleados del departamento de INVESTIGACIÓN un
+10% la media de sus salarios. (NO ME FUNCIONA)
+
+
+let $dept_investigacion := //DEP_ROW[DNOMBRE='INVESTIGACION']/DEPT_NO
+let $media := avg(//EMP_ROW[DEPT_NO=$dept_investigacion]/SALARIO)
+for $emp in //EMP_ROW[DEPT_NO=$dept_investigacion]
+return
+   update value $emp/SALARIO with $emp/SALARIO + ($media * 0.1)
