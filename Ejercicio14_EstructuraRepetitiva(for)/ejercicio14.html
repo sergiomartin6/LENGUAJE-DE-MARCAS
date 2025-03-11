@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //a)
+        // cont=0;
+        // for (let index = 0; index <3; index++) {
+        //     base=parseInt(prompt("Introduzca la base del triangulo"))
+        //     altura=parseInt(prompt("Introduzca la altura del12 triangulo"))
+
+        //     superficie=base*altura/2
+        //     if(superficie>12){
+        //         cont++;3
+        //     }
+        //     document.write("<h3>"+" La base es de "+base+" la altura es de "+altura+" y al superficie es de " +superficie+"</h3>")
+        // }
+        // document.writeln("<h3>"+"Hay "+cont+" triangulos que su superficie es mayor a 12"+ "</h3>")
+
+
+        //b)
+        // suma = 0
+
+        // for (let index = 1; index <= 10; index++) {
+        //     numero = parseInt(prompt("Introduzca un numero"))
+        //     if (index >= 5) {
+        //         suma += numero
+
+        //     }
+
+        // }
+        // document.writeln("La suma total es de " + suma)
+
+
+        //c)
+
+        // for (let index = 1; index <= 10; index++) {
+        //     document.writeln("<h3>"+"5* "+index+"="+5*index+"<h3>")
+
+        // }
+
+
+        //d)
+
+        // numero = parseInt(prompt("Introduzca un numero"))
+        // for (let index = 1; index <= 10; index++) {
+        //     document.writeln("<h3>" + numero + "* " + index + "=" + numero * index + "<h3>")
+
+        // }
+
+
+        //e)
+
+        // equilateroscont = 0;
+        // isoscelescont = 0;
+        // escalenocont = 0;
+        // for (let index = 0; index < 4; index++) {
+        //     lado1 = parseInt(prompt("Introduzca el lado 1 del triangulo"))
+        //     lado2 = parseInt(prompt("Introduzca el lado 2 del triangulo"))
+        //     lado3 = parseInt(prompt("Introduzca el lado 3 del triangulo"))
+
+
+
+        //     if (lado1 == lado2 && lado2 == lado3 && lado1 == lado3) {
+        //         document.writeln("Es equilatero")
+        //         equilateroscont++;
+        //     } else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
+        //         document.writeln("Es isosceleses")
+        //         isoscelescont++;
+        //     } else {
+        //         document.writeln("Es escaleno")
+        //         escalenocont++;
+        //     }
+
+        // }
+        // document.writeln("<h3>" + "Hay " + equilateroscont + " triangulos equilateros" + "</h3>")
+        // document.writeln("<h3>" + "Hay " + isoscelescont + " triangulos isosceles" + "</h3>")
+        // document.writeln("<h3>" + "Hay " + escalenocont + " triangulos escaleno" + "</h3>")
+
+        // if ((equilateroscont < isoscelescont) && (equilateroscont < escalenocont)) {
+        //     document.writeln("Hay menos equilateros")
+        // } else if (isoscelescont < equilateroscont && isoscelescont < escalenocont) {
+        //     document.writeln("Hay menos isosceles")
+        // } else {
+        //     document.writeln("Hay menos escalenos")
+        // }
+
+
+
+        //f)
+
+        // primerCuadrante = 0;
+        // segundoCuadrante = 0;
+        // tercerCuadrante = 0;
+        // cuartoCuadrante = 0;
+
+        // cantidad = parseInt(prompt("Ingrese la cantidad de puntos a procesar:"));
+
+        // for (let i = 0; i < cantidad; i++) {
+        //     let x = parseInt(prompt("Ingrese la coordenada X del punto:"));
+        //     let y = parseInt(prompt("Ingrese la coordenada Y del punto:"));
+
+        //     if (x > 0 && y > 0) {
+        //         primerCuadrante++;
+        //     } else if (x < 0 && y > 0) {
+        //         segundoCuadrante++;
+        //     } else if (x < 0 && y < 0) {
+        //         tercerCuadrante++;
+        //     } else if (x > 0 && y < 0) {
+        //         cuartoCuadrante++;
+        //     }
+        // }
+
+        // document.writeln("<h3>Puntos en el primer cuadrante: " + primerCuadrante + "</h3>");
+        // document.writeln("<h3>Puntos en el segundo cuadrante: " + segundoCuadrante + "</h3>");
+        // document.writeln("<h3>Puntos en el tercer cuadrante: " + tercerCuadrante + "</h3>");
+        // document.writeln("<h3>Puntos en el cuarto cuadrante: " + cuartoCuadrante + "</h3>");
+
+
+        //g)
+
+        // valoresNegativos = 0;
+        // valoresPositivos = 0;
+        // multiplo15 = 0;
+        // sumaPares = 0;
+
+        // for (let index = 0; index < 10; index++) {
+        //     valor = parseInt(prompt("Introduzca un valor"))
+        //     if (valor > 0) {
+        //         valoresPositivos++;
+        //     } else if (valor < 0) {
+        //         valoresNegativos++;
+        //     }
+        //     if ((valor % 15) == 0) {
+        //         multiplo15++;
+        //     }
+        //     if (valor % 2 == 0) {
+        //         sumaPares += valor
+        //     }
+        // }
+        // document.writeln("<h3>Cantidad de valores negativos: " + valoresNegativos + "</h3>");
+        // document.writeln("<h3>Cantidad de valores positivos: " + valoresPositivos + "</h3>");
+        // document.writeln("<h3>Cantidad de múltiplos de 15: " + multiplo15 + "</h3>");
+        // document.writeln("<h3>Suma de los números pares: " + sumaPares + "</h3>");
+
+
+
+        //h)
+
+
+        // sumaMañana = 0;
+        // sumaTarde = 0;
+        // sumaNoche = 0;
+        // promedioMañana = 0;
+        // promedioTarde = 0;
+        // promedioNoche = 0;
+
+        
+        // for (let i = 0; i <= 50; i++) {
+        //     edad = parseInt(prompt("Ingrese la edad del estudiante " + (i + 1) + " del turno Mañana:"))
+        //     sumaMañana += edad;
+        // }
+        // promedioMañana = sumaMañana / 50;
+
+        
+        // for (let i = 0; i < 60; i++) {
+        //     edad = parseInt(prompt("Ingrese la edad del estudiante " + (i + 1) + " del turno Tarde:"))
+        //     sumaTarde += edad;
+        // }
+        // promedioTarde = sumaTarde / 60;
+
+       
+        // for (let i = 0; i < 110; i++) {
+        //     edad = parseInt(prompt("Ingrese la edad del estudiante " + (i + 1) + " del turno Noche:"))
+        //     sumaNoche += edad;
+        // }
+        // promedioNoche = sumaNoche / 110;
+
+       
+        // document.writeln("<h3>Promedio de edades del turno Mañana: " + promedioMañana + "</h3>");
+        // document.writeln("<h3>Promedio de edades del turno Tarde: " + promedioTarde + "</h3>");
+        // document.writeln("<h3>Promedio de edades del turno Noche: " + promedioNoche + "</h3>");
+
+        
+        // if (promedioMañana > promedioTarde && promedioMañana > promedioNoche) {
+        //     document.writeln("<h2>El turno con mayor promedio de edad es: Mañana</h2>");
+        // } else if (promedioTarde > promedioMañana && promedioTarde > promedioNoche) {
+        //     document.writeln("<h2>El turno con mayor promedio de edad es: Tarde</h2>");
+        // } else {
+        //     document.writeln("<h2>El turno con mayor promedio de edad es: Noche</h2>");
+        // }
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
